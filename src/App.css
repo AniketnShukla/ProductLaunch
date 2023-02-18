@@ -1,0 +1,48 @@
+@import url('https://fonts.googleapis.com/css2?family=Gentium+Book+Basic:ital@0;1&family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;1,300;1,400;1,500;1,600&display=swap');
+:root{
+  --primary-color: #000;
+  --secondary-color: #E3E4DB;
+  --accent-color: lime;
+  --text-color: #E3E4DB;
+  --fs-xl: 5rem;
+  --fs-600: 3rem;
+  --fs-500: 2.5rem;
+  --fs-400: 1.125rem;
+  --doc-height: 100%;
+}
+@media (max-width: 700px) {
+  :root{
+    --fs-xl: 7rem;
+    --fs-600: 4rem;
+    --fs-500: 3.5rem;
+    --fs-400: 2.5rem;
+  }
+  .page{
+    height: 100vh;
+    height: -webkit-fill-available;
+  }
+}
+html{
+  scroll-behavior: smooth;
+  color: var(--text-color);  
+}
+#root{
+  width: 100%;
+}
+.App{
+  width: 100%;
+  min-height: 100vh;
+  min-height: 100svh;
+  display: grid;
+  font-family: 'Open Sans', sans-serif;
+}
+.main-content{
+  padding: 0 4%;
+}
+.page{
+  max-width: 100%;
+  min-height: 100vh;
+  min-height: 100svh;
+  margin-bottom: 2rem;
+}
+
